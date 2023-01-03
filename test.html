@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            background-image: url("https://source.unsplash.com/random");
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: rgb(220, 134, 54);
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: rgb(211, 211, 18);
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: rgb(53, 188, 211);
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: rgb(100, 200, 46);
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: rgb(203, 86, 109);
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .button {
+            background-color: red;
+            animation-name: example;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            border: 2px;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 200px 10px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            transform: translateY(-4px);
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* h1 {
+            font-size: 48px;
+            text-align: center;
+            animation: bounce 5s;
+            animation-iteration-count: infinite;
+            color: white;
+        } */
+
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #f5f5f5;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        /* .logo {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        } */
+
+        nav {
+            background-color: #333333;
+            color: white;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+        }
+
+        .nav-icon {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 5px;
+            left: 10px;
+        }
+
+        .nav-heading {
+            font-size: 30px;    
+            text-align: center;
+            justify-content: center;
+            animation: bounce 5s;
+            animation-iteration-count: infinite;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img class="nav-icon" src="https://cdn.discordapp.com/attachments/973525718069817354/1059838660096299121/unknown-removebg-preview.png" alt="Website Icon">
+        <h1 class="nav-heading">Cold Bot</h1>
+      </nav>
+    <!-- <h1>Cold Bot</h1>
+    <img class="logo"
+        src="https://cdn.discordapp.com/attachments/973525718069817354/1059838660096299121/unknown-removebg-preview.png"
+        alt="Logo"> -->
+    <a
+        href="https://discord.com/api/oauth2/authorize?client_id=913680240746836059&permissions=8&scope=applications.commands%20bot"><button
+            class="button">Invite</button></a>
+    <a href="https://discord.gg/6xVmYuPt35"><button class="button">Support Server</button></a>
+    <div class="footer">
+        Copyright ©️ 2023 Cold Bot | All Rights Reserved
+    </div>
+</body>
+
+</html>
