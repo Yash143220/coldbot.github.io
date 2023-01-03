@@ -128,7 +128,25 @@
             height: 80px;
             display: flex;
             align-items: center;
-            justify-content:space-around;
+            justify-content: space-around;
+        }
+
+        .nav-button {
+            background-color: #655998;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            display: inline-block;
+            font-size: 16px;
+            right: 30px;
+            cursor: pointer;
+        }
+        .nav-button:hover {
+            box-shadow: 0 12px 16px 0 rgba(88, 85, 85, 0.24), 0 17px 50px 0 rgba(233, 232, 232, 0.19);
+            transform: translateY(-4px);
         }
 
         .nav-icon {
@@ -140,7 +158,7 @@
         }
 
         .nav-heading {
-            font-size: 30px;    
+            font-size: 30px;
             text-align: center;
             justify-content: center;
             animation: bounce 5s;
@@ -152,9 +170,12 @@
 
 <body>
     <nav>
-        <img class="nav-icon" src="https://cdn.discordapp.com/attachments/973525718069817354/1059838660096299121/unknown-removebg-preview.png" alt="Website Icon">
+        <img class="nav-icon"
+            src="https://cdn.discordapp.com/attachments/973525718069817354/1059838660096299121/unknown-removebg-preview.png"
+            alt="Website Icon">
         <h1 class="nav-heading">Cold Bot</h1>
-      </nav>
+        <a class="nav-button" href="button.html">Vote</a>
+    </nav>
     <!-- <h1>Cold Bot</h1>
     <img class="logo"
         src="https://cdn.discordapp.com/attachments/973525718069817354/1059838660096299121/unknown-removebg-preview.png"
