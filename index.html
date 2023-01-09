@@ -2,17 +2,18 @@
 <html>
 
 <head>
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="An Multipurpose Bot With Admin Commands, Music Support, DJ System, Fun, Games, Join-to-Create VC And Much More!">
-    <meta name="keywords" content="coldbot, discord cold bot, coldbot discord, cold music bot, cold music, cold bot, multipurpose bot, all in one discord bot, all in one bot, moderation bot, fun bot, games bot, discord games, best moderation bot, music bot, best music bot, discord bots, popular discord bots, best discord bot, best discord bot for music">
-      <script async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5518006423309233"
-            crossorigin="anonymous"></script>
+    <meta name="description"
+        content="An Multipurpose Bot With Admin Commands, Music Support, DJ System, Fun, Games, Join-to-Create VC And Much More!">
+    <meta name="keywords"
+        content="multipurpose bot, all in one discord bot, all in one bot, moderation bot, fun bot, games bot, discord games, best moderation bot, music bot, best music bot, discord bots, popular discord bots, best discord bot, best discord bot for music">
     <title>Cold Bot</title>
-    <link rel="icon" href="https://cdn.discordapp.com/avatars/913680240746836059/6866116430c2d704c980526a340db67a.webp" type="image/icon type">
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/913680240746836059/6866116430c2d704c980526a340db67a.webp"
+        type="image/icon type">
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
         body {
             background-image: url("https://source.unsplash.com/random");
             background-size: cover;
@@ -69,7 +70,7 @@
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            margin: 200px 10px;
+            margin: 150px 10px;
             cursor: pointer;
         }
 
@@ -116,15 +117,7 @@
             }
         }
 
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 60px;
-            background-color: #ffffff5e;
-            text-align: center;
-            line-height: 60px;
-        }
+
 
         /* .logo {
             width: 100px;
@@ -147,7 +140,7 @@
             background-color: #655998;
             border: 2px solid;
             border-radius: 5px;
-            color: rgb(20, 255, 227);
+            color: rgb(20 255 227);
             padding: 16px 32px;
             text-align: center;
             text-decoration: none;
@@ -159,7 +152,7 @@
         }
 
         .nav-button:hover {
-            box-shadow: 0 12px 16px 0 rgba(88, 85, 85, 0.24), 0 17px 50px 0 rgba(233, 232, 232, 0.19);
+            box-shadow: 0 12px 16px 0 rgba(6, 170, 159, 0.24), 0 17px 50px 0 rgba(27, 136, 144, 0.19);
             transform: translateY(-4px);
         }
 
@@ -180,24 +173,108 @@
             color: white;
         }
 
-        .left-ad {
-            float: left;
-            width: 160px;
-            height: 600px;
-            margin: 16px;
+        .feature-card {
+            width: 280px;
+            height: 170px;
+            position: static;
+            display: inline-table;
+            margin: 100px 20px;
+            /* Adjust this value to change the height of the cards */
+            perspective: 1000px;
         }
 
-        .right-ad {
-            float: right;
-            width: 160px;
-            height: 600px;
-            margin: 16px;
+        .card-front,
+        .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: 2px solid;
+            border-radius: 5px;
+            backface-visibility: hidden;
+            transition: transform 0.6s;
         }
+
+        .card-front {
+            background-image: url("https://cdn.discordapp.com/attachments/973525718069817354/1062066130522484897/czech-republic-praha-dark-alley.png");
+            background-size: cover;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feature-icon {
+            width: 150px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .feature-title {
+            font-size: 24px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        .card-back {
+            background-image: url("https://cdn.discordapp.com/attachments/973525718069817354/1062066854790709359/grunge-paint-background_1409-1337.png");
+            transform: rotateY(180deg);
+            background-size: cover; 
+        }
+
+        .feature-description {
+            color: rgb(0, 0, 0)    ;
+            font-size: 16px;
+            text-align: center;
+            padding: 40px 32px;
+        }
+
+        .feature-card:hover .card-front {
+            transform: rotateY(180deg);
+            border: 2px solid;
+            border-radius: 5px;
+        }
+
+        .feature-card:hover .card-back {
+            transform: rotateY(0deg);
+            border: 2px solid;
+            border-radius: 5px;
+        }
+/* 
+        .feature-card:nth-of-type(1) .card-front {
+            background-image: url("https://cdn.discordapp.com/attachments/973525718069817354/1062048137872679013/imrs.png");
+            background-size: cover;
+        }
+
+        .feature-card:nth-of-type(2) .card-front {
+            background-image: url("https://cdn.discordapp.com/attachments/973525718069817354/1062055933238325368/image.png");
+            background-size: cover;
+        }
+
+        .feature-card:nth-of-type(3) .card-front {
+            background-image: url("https://cdn.discordapp.com/attachments/973525718069817354/1062056216739709048/image.png");
+            background-size: cover;
+        }
+
+        .feature-card:nth-of-type(4) .card-front {
+            background-image: url("https://cdn.discordapp.com/attachments/973525718069817354/1062056257659359272/image.png ");
+            background-size: cover;
+        } */
 
         @media (max-width: 600px) {
             .column {
                 width: 100%;
             }
+        }
+
+        .footer {
+            position: static;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #ffffff5e;
+            text-align: center;
+            line-height: 60px;
         }
     </style>
 </head>
@@ -210,31 +287,54 @@
         <h1 class="nav-heading">Cold Bot</h1>
         <a class="nav-button" href="https://coldbot.tk/vote">Vote</a>
     </nav>
-    <a
-        href="https://discord.com/api/oauth2/authorize?client_id=913680240746836059&permissions=8&scope=applications.commands%20bot"><button
-            class="button">Invite</button></a>
-    <a href="https://discord.gg/6xVmYuPt35"><button class="button">Support Server</button></a>
-   <!-- <div class="left-ad">
-        <script async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5518006423309233"
-            crossorigin="anonymous"></script>
+    <section> <a
+            href="https://discord.com/api/oauth2/authorize?client_id=913680240746836059&permissions=8&scope=applications.commands%20bot"><button
+                class="button">Invite</button></a>
+        <a href="https://discord.gg/6xVmYuPt35"><button class="button">Support Server</button></a>
+    </section>
+    <div class="feature-card">
+        <div class="card-front">
+            <!-- <img class="feature-icon" src="https://cdn.discordapp.com/attachments/973525718069817354/1062048137872679013/imrs.png" alt="Moderation Icon"> -->
+            <h2 class="feature-title">Moderation</h2>
+        </div>
+        <div class="card-back">
+            <p class="feature-description">Keep your server clean and organized with commands like kick, ban, and mute.
+            </p>
+        </div>
     </div>
-    <div class="right-ad">
-        <script async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5518006423309233"
-            crossorigin="anonymous"></script>
+    <div class="feature-card">
+        <div class="card-front">
+            <!-- <img class="feature-icon" src="https://cdn.discordapp.com/attachments/973525718069817354/1062055933238325368/image.png" alt="Music Icon"> -->
+            <h2 class="feature-title">Music</h2>
+        </div>
+        <div class="card-back">
+            <p class="feature-description">Play your favorite songs and create playlists with the music commands.</p>
+        </div>
     </div>
-    <!-- <div class="ads">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5518006423309233"
-            data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div> -->
-    <div class="footer">
-        Copyright ©️ 2023 Cold Bot | All Rights Reserved
+    <div class="feature-card">
+        <div class="card-front">
+            <!-- <img class="feature-icon" src="https://cdn.discordapp.com/attachments/973525718069817354/1062056216739709048/image.png" alt="Fun Games Icon"> -->
+            <h2 class="feature-title">Fun Games</h2>
+        </div>
+        <div class="card-back">
+            <p class="feature-description">Play games and have fun with commands like trivia and hangman.</p>
+        </div>
     </div>
+    <div class="feature-card">
+        <div class="card-front">
+            <!-- <img class="feature-icon" src="https://cdn.discordapp.com/attachments/973525718069817354/1062056257659359272/image.png" alt="Utility Icon"> -->
+            <h2 class="feature-title">Utility</h2>
+        </div>
+        <div class="card-back">
+            <p class="feature-description">Get useful information and perform tasks with commands like weather and
+                to-do lists.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            Copyright ©️ 2023 Cold Bot | All Rights Reserved
+        </div>
+    </footer>
 </body>
 
 </html>
